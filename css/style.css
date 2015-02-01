@@ -1,0 +1,170 @@
+/* line 1, ../sass/style.scss */
+.main, .wrapper {
+  position: relative;
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+/* line 11, ../sass/style.scss */
+.register {
+  margin-top: 20px;
+  text-align: center;
+}
+/* line 15, ../sass/style.scss */
+.register a {
+  text-decoration: none;
+}
+
+/* line 20, ../sass/style.scss */
+.error {
+  color: #FF0000;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* line 26, ../sass/style.scss */
+.wrapper {
+  border: 2px solid #999;
+  margin-top: 100px;
+}
+
+/* line 34, ../sass/style.scss */
+.main-nav {
+  list-style: none;
+  margin: 0px;
+  min-height: 40px;
+  padding: 0px;
+  display: block;
+  clear: both;
+  border-bottom: 2px solid #999;
+}
+/* line 46, ../sass/style.scss */
+.main-nav li {
+  float: left;
+  display: block;
+  padding: 7px 0px;
+  margin-right: 3px;
+  width: 198px;
+  background-color: #36c;
+  text-align: center;
+}
+/* line 57, ../sass/style.scss */
+.main-nav li:last-child {
+  margin-right: 0px;
+}
+/* line 58, ../sass/style.scss */
+.main-nav li:hover {
+  background-color: #69f;
+}
+/* line 60, ../sass/style.scss */
+.main-nav li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-size: 22px;
+}
+
+/* line 70, ../sass/style.scss */
+#movies, #loans, #account {
+  background-color: #31C3E7;
+  padding-top: 5px;
+}
+/* line 74, ../sass/style.scss */
+#movies.hidden, #loans.hidden, #account.hidden {
+  display: none;
+}
+/* line 78, ../sass/style.scss */
+#movies form, #loans form, #account form {
+  margin: 0px;
+}
+/* line 82, ../sass/style.scss */
+#movies h2, #loans h2, #account h2 {
+  text-align: center;
+}
+/* line 86, ../sass/style.scss */
+#movies fieldset, #loans fieldset, #account fieldset {
+  background-color: #D6E4E1;
+  color: #003366;
+  border: 1px solid #003366;
+  margin: 0px 15px 5px 15px;
+  position: relative;
+  padding: 12px;
+}
+/* line 96, ../sass/style.scss */
+#movies fieldset:last-child, #loans fieldset:last-child, #account fieldset:last-child {
+  margin-bottom: 0px;
+}
+/* line 98, ../sass/style.scss */
+#movies fieldset .movie_title, #loans fieldset .movie_title, #account fieldset .movie_title {
+  font-size: 19px;
+  margin: 0px 0px 30px 0px;
+  display: block;
+  font-weight: bold;
+  float: left;
+}
+/* line 107, ../sass/style.scss */
+#movies fieldset .description, #loans fieldset .description, #account fieldset .description {
+  display: block;
+  width: 544px;
+  margin-bottom: 30px;
+  float: left;
+}
+/* line 115, ../sass/style.scss */
+#movies fieldset .title, #loans fieldset .title, #account fieldset .title {
+  display: block;
+  margin: 2px 0px;
+  font-weight: bold;
+}
+/* line 122, ../sass/style.scss */
+#movies fieldset .info, #loans fieldset .info, #account fieldset .info {
+  margin: 0px;
+  display: block;
+}
+/* line 127, ../sass/style.scss */
+#movies fieldset .director, #loans fieldset .director, #account fieldset .director {
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+/* line 134, ../sass/style.scss */
+#movies fieldset .director .title, #loans fieldset .director .title, #account fieldset .director .title {
+  text-align: right;
+}
+/* line 137, ../sass/style.scss */
+#movies fieldset .borrow_movie, #loans fieldset .borrow_movie, #account fieldset .borrow_movie {
+  display: block;
+  float: right;
+  font-weight: bold;
+}
+/* line 143, ../sass/style.scss */
+#movies fieldset .borrowed_date, #loans fieldset .borrowed_date, #account fieldset .borrowed_date {
+  margin: 0px;
+  text-align: right;
+}
+/* line 149, ../sass/style.scss */
+#movies .rent, #loans .rent, #account .rent {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 80px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+/* line 159, ../sass/style.scss */
+#movies .rent input[type="submit"], #loans .rent input[type="submit"], #account .rent input[type="submit"] {
+  border-radius: 9px;
+  border: 1px solid #003366;
+  color: #003366;
+  font-size: 20px;
+  padding: 4px 16px;
+  cursor: pointer;
+}
+/* line 171, ../sass/style.scss */
+#movies .loans_info, #loans .loans_info, #account .loans_info {
+  text-align: center;
+  margin: 0px;
+  padding-bottom: 20px;
+}
