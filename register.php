@@ -10,8 +10,8 @@ session_start();
 
 			// Storage data
 			$user_id = uniqid();
-			$user_name = $_POST['name'];
-			$user_password = $_POST['password'];
+			$user_name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+			$user_password = filter_var($_POST['password'], FILTER_SANITIZE_STRING);
 
 			// Storing the new user in a CSV file
 			$storage = fopen('data/account.csv', 'a');

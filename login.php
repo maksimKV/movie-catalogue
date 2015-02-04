@@ -23,9 +23,11 @@ session_start();
 
     if (!empty($_POST)){
 		if(!empty($_POST['name']) && !empty($_POST['password'])){
+			$user_name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+			$user_password = filter_var($_POST['password'], FILTER_SANITIZE_STRING);
 
 			foreach($users as $user){
-				if($user[1] == $_POST['name'] && $user[2] == $_POST['password']){
+				if($user[1] == $user_name && $user[2] == $user_password){
 
 					$_SESSION['user_name'] = $user[1];
 					$_SESSION['user_id'] = $user[0];
