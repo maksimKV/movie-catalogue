@@ -37,6 +37,10 @@ session_start();
 					header("Location: index.php");
 				}
 			}
+
+			if (empty($_SESSION['user_id'])){
+				$error = "Please make sure that you have inserted the right name and password";
+			}
 		
 		} else if(!empty($_POST['name'])) {
 			$error = "There was an error. Please check that you have entered your password";

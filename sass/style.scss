@@ -144,6 +144,20 @@
 			margin: 0px;
 			text-align: right;
 		}
+
+		.overdue {
+			display: block;
+			position: absolute;
+
+			bottom: 12px;
+			left: 12px;
+
+			margin-bottom: 0px;
+			font-size: 18px;
+
+			color: #8C1717;
+			font-weight: bold;
+		}
 	}
 
 	.rent {

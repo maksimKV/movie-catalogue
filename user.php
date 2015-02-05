@@ -8,6 +8,8 @@
 		public $borrowed_movies = array();
 		public $number_movies;
 
+		public $fines;
+
 		public function __construct($id, $name, $password){
 			$this->id = $id;
 			$this->name = $name;
@@ -53,10 +55,32 @@
 	        		}
 	    		}
 
+	    		// Checking if any fines are in order
+				$time_difference = time() - $date_taken;
+				$day_difference = floor($time_difference/(60*60*24));
+				
+				$day = 0;
+				while($day <= $day_difference) {
+					if ($day > 7 && $day <= 14){
+						$this->fines = $this->fines + 0.25;
+					} else if($day > 14) {
+						$this->fines = $this->fines + 0.50;
+					}
+
+					$day++;
+				}
+
+				$overdue = $day_difference - 7;
+
 	    		echo "<p class='borrowed_date'>Borrowed <br />
 					<i>(". date('j F Y', $date_taken) .")</i></p>
-					<input type='checkbox' name='return_id[]' value='" . $movie->id . "'>Return Movie
-					</div></fieldset>";
+					<input type='checkbox' name='return_id[]' value='" . $movie->id . "'>Return Movie</div>";
+
+				if($overdue > 0){
+					echo "<p class='overdue'>Overdue (" . $overdue . " Days)</p>";
+				}
+
+				echo "</fieldset>";
 			}
 		}
 	}

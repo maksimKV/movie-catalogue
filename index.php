@@ -73,7 +73,15 @@ session_start();
 				<form name="logout_form" action="" method="post">
 					<fieldset>
 						<div class="description">
-							<p>Welcome to your account section. At the moment you can only sign out, but more functionallity is coming in the future.</p>
+							<p>Welcome to your account section.
+								<?php
+									if(!empty($current_user->fines)){
+										echo "You currently have £" . $current_user->fines . " in fines!";
+									} else {
+										echo "You currently do not have a single fine. Well done!";
+									}
+								?>
+							</p>
 						</div>
 
 						<input type='hidden' name='sign_out' value='sign_out' />
