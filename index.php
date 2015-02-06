@@ -5,8 +5,6 @@ session_start();
 		header("Location: login.php");
 	}
 
-	//session_destroy();
-
 	include 'user.php';
 	include 'movies.php';
 
@@ -15,8 +13,6 @@ session_start();
 	include 'functionality.php';
 
     // $catalogue is an array with all the movie objects
-
-    // Don't forget to update the previous code to register a user
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

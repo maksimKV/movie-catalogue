@@ -46,6 +46,12 @@
 		    			echo "<p class='borrowed_date'>Borrowed <br />
 		    				<i>(". date('j F Y', $date_taken) .")</i>
 		    			</p>";
+
+		    			echo "<p class='due'";
+		    				if ($date_taken - time() < 0){ 
+		    					echo "style='color:#8C1717;'"; 
+		    				}
+		    			echo ">Due <i>(" . date('j F Y', strtotime('+7 day', $date_taken) ) . ")</i></p>";
 		    		} else {
 		    			echo '<input type="checkbox" name="movie_id[]" value="' . $this->id . '">Borrow Movie';
 		    		}

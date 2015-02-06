@@ -158,6 +158,17 @@
 			color: #8C1717;
 			font-weight: bold;
 		}
+
+		.due {
+			display: block;
+			position: absolute;
+
+			bottom: 12px;
+			left: 12px;
+
+			margin-bottom: 0px;
+			font-size: 18px;
+		}
 	}
 
 	.rent {
@@ -187,7 +198,4 @@
 		margin: 0px;
 		padding-bottom: 20px;
 	}
-}
-
-#loans {
 }
